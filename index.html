@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>pichub</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header glass">
+  <h1>pichub</h1>
+
+  <div class="actions">
+    <input id="fileInput" type="file" accept="image/*" multiple hidden>
+    <button onclick="fileInput.click()">업로드</button>
+    <button onclick="loadDrive()">Google Drive</button>
+  </div>
+</header>
+
+<main id="gallery" class="gallery"></main>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+</html>
